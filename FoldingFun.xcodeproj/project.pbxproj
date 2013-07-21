@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1D166C9179C62AB0008E93F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D166C8179C62AB0008E93F /* UIKit.framework */; };
+		A1D166CB179C62AB0008E93F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D166CA179C62AB0008E93F /* Foundation.framework */; };
+		A1D166CD179C62AB0008E93F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D166CC179C62AB0008E93F /* CoreGraphics.framework */; };
+		A1D166D3179C62AB0008E93F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A1D166D1179C62AB0008E93F /* InfoPlist.strings */; };
+		A1D166D5179C62AB0008E93F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D166D4179C62AB0008E93F /* main.m */; };
+		A1D166E9179C63330008E93F /* ANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D166E6179C63330008E93F /* ANAppDelegate.m */; };
+		A1D166EA179C63330008E93F /* ANFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D166E8179C63330008E93F /* ANFirstViewController.m */; };
+		A1D166F1179C63470008E93F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D166EC179C63470008E93F /* Default-568h@2x.png */; };
+		A1D166F2179C63470008E93F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D166ED179C63470008E93F /* Default.png */; };
+		A1D166F3179C63470008E93F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D166EE179C63470008E93F /* Default@2x.png */; };
+		A1D166F4179C63470008E93F /* ios6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D166EF179C63470008E93F /* ios6@2x.png */; };
+		A1D166F5179C63470008E93F /* ios7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A1D166F0179C63470008E93F /* ios7@2x.png */; };
+		A1D166F7179C63670008E93F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D166F6179C63670008E93F /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A1D166C5179C62AB0008E93F /* FoldingFun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoldingFun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1D166C8179C62AB0008E93F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A1D166CA179C62AB0008E93F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A1D166CC179C62AB0008E93F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A1D166D0179C62AB0008E93F /* FoldingFun-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FoldingFun-Info.plist"; sourceTree = "<group>"; };
+		A1D166D2179C62AB0008E93F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A1D166D4179C62AB0008E93F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A1D166D6179C62AB0008E93F /* FoldingFun-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FoldingFun-Prefix.pch"; sourceTree = "<group>"; };
+		A1D166DA179C62AB0008E93F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A1D166DC179C62AB0008E93F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A1D166DE179C62AB0008E93F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A1D166E5179C63330008E93F /* ANAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ANAppDelegate.h; path = Classes/ANAppDelegate.h; sourceTree = "<group>"; };
+		A1D166E6179C63330008E93F /* ANAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ANAppDelegate.m; path = Classes/ANAppDelegate.m; sourceTree = "<group>"; };
+		A1D166E7179C63330008E93F /* ANFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ANFirstViewController.h; path = Classes/ANFirstViewController.h; sourceTree = "<group>"; };
+		A1D166E8179C63330008E93F /* ANFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ANFirstViewController.m; path = Classes/ANFirstViewController.m; sourceTree = "<group>"; };
+		A1D166EC179C63470008E93F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Resources/Default-568h@2x.png"; sourceTree = "<group>"; };
+		A1D166ED179C63470008E93F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Default.png; sourceTree = "<group>"; };
+		A1D166EE179C63470008E93F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/Default@2x.png"; sourceTree = "<group>"; };
+		A1D166EF179C63470008E93F /* ios6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ios6@2x.png"; path = "Resources/ios6@2x.png"; sourceTree = "<group>"; };
+		A1D166F0179C63470008E93F /* ios7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ios7@2x.png"; path = "Resources/ios7@2x.png"; sourceTree = "<group>"; };
+		A1D166F6179C63670008E93F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1D166C2179C62AB0008E93F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D166F7179C63670008E93F /* QuartzCore.framework in Frameworks */,
+				A1D166C9179C62AB0008E93F /* UIKit.framework in Frameworks */,
+				A1D166CB179C62AB0008E93F /* Foundation.framework in Frameworks */,
+				A1D166CD179C62AB0008E93F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1D166BC179C62AB0008E93F = {
+			isa = PBXGroup;
+			children = (
+				A1D166CE179C62AB0008E93F /* FoldingFun */,
+				A1D166C7179C62AB0008E93F /* Frameworks */,
+				A1D166C6179C62AB0008E93F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1D166C6179C62AB0008E93F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1D166C5179C62AB0008E93F /* FoldingFun.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1D166C7179C62AB0008E93F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1D166C8179C62AB0008E93F /* UIKit.framework */,
+				A1D166CA179C62AB0008E93F /* Foundation.framework */,
+				A1D166CC179C62AB0008E93F /* CoreGraphics.framework */,
+				A1D166F6179C63670008E93F /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A1D166CE179C62AB0008E93F /* FoldingFun */ = {
+			isa = PBXGroup;
+			children = (
+				A1D166E5179C63330008E93F /* ANAppDelegate.h */,
+				A1D166E6179C63330008E93F /* ANAppDelegate.m */,
+				A1D166E7179C63330008E93F /* ANFirstViewController.h */,
+				A1D166E8179C63330008E93F /* ANFirstViewController.m */,
+				A1D166EB179C633A0008E93F /* Resources */,
+				A1D166CF179C62AB0008E93F /* Supporting Files */,
+			);
+			path = FoldingFun;
+			sourceTree = "<group>";
+		};
+		A1D166CF179C62AB0008E93F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1D166D0179C62AB0008E93F /* FoldingFun-Info.plist */,
+				A1D166D1179C62AB0008E93F /* InfoPlist.strings */,
+				A1D166D4179C62AB0008E93F /* main.m */,
+				A1D166D6179C62AB0008E93F /* FoldingFun-Prefix.pch */,
+				A1D166DA179C62AB0008E93F /* Default.png */,
+				A1D166DC179C62AB0008E93F /* Default@2x.png */,
+				A1D166DE179C62AB0008E93F /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1D166EB179C633A0008E93F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A1D166EC179C63470008E93F /* Default-568h@2x.png */,
+				A1D166ED179C63470008E93F /* Default.png */,
+				A1D166EE179C63470008E93F /* Default@2x.png */,
+				A1D166EF179C63470008E93F /* ios6@2x.png */,
+				A1D166F0179C63470008E93F /* ios7@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1D166C4179C62AB0008E93F /* FoldingFun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1D166E2179C62AB0008E93F /* Build configuration list for PBXNativeTarget "FoldingFun" */;
+			buildPhases = (
+				A1D166C1179C62AB0008E93F /* Sources */,
+				A1D166C2179C62AB0008E93F /* Frameworks */,
+				A1D166C3179C62AB0008E93F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoldingFun;
+			productName = FoldingFun;
+			productReference = A1D166C5179C62AB0008E93F /* FoldingFun.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1D166BD179C62AB0008E93F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AN;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Andrzej Naglik";
+			};
+			buildConfigurationList = A1D166C0179C62AB0008E93F /* Build configuration list for PBXProject "FoldingFun" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A1D166BC179C62AB0008E93F;
+			productRefGroup = A1D166C6179C62AB0008E93F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1D166C4179C62AB0008E93F /* FoldingFun */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1D166C3179C62AB0008E93F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D166D3179C62AB0008E93F /* InfoPlist.strings in Resources */,
+				A1D166F1179C63470008E93F /* Default-568h@2x.png in Resources */,
+				A1D166F2179C63470008E93F /* Default.png in Resources */,
+				A1D166F3179C63470008E93F /* Default@2x.png in Resources */,
+				A1D166F4179C63470008E93F /* ios6@2x.png in Resources */,
+				A1D166F5179C63470008E93F /* ios7@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1D166C1179C62AB0008E93F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1D166D5179C62AB0008E93F /* main.m in Sources */,
+				A1D166E9179C63330008E93F /* ANAppDelegate.m in Sources */,
+				A1D166EA179C63330008E93F /* ANFirstViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A1D166D1179C62AB0008E93F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1D166D2179C62AB0008E93F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1D166E0179C62AB0008E93F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A1D166E1179C62AB0008E93F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1D166E3179C62AB0008E93F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoldingFun/FoldingFun-Prefix.pch";
+				INFOPLIST_FILE = "FoldingFun/FoldingFun-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A1D166E4179C62AB0008E93F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FoldingFun/FoldingFun-Prefix.pch";
+				INFOPLIST_FILE = "FoldingFun/FoldingFun-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1D166C0179C62AB0008E93F /* Build configuration list for PBXProject "FoldingFun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1D166E0179C62AB0008E93F /* Debug */,
+				A1D166E1179C62AB0008E93F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1D166E2179C62AB0008E93F /* Build configuration list for PBXNativeTarget "FoldingFun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1D166E3179C62AB0008E93F /* Debug */,
+				A1D166E4179C62AB0008E93F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1D166BD179C62AB0008E93F /* Project object */;
+}
