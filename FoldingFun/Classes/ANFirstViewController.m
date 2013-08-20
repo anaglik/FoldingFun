@@ -21,7 +21,8 @@
 
 - (UIImage*)imageFoldForRect:(CGRect)rect;
 - (void)viewPanned:(UIPanGestureRecognizer*)recognizer;
-- (void)updateLayersTransformsWithProgress:(CGFloat)progress animated:(BOOL)animated time:(CFTimeInterval)time;
+- (void)updateLayersTransformsWithProgress:(CGFloat)progress animated:(BOOL)animated time:(CFTimeInterval)time
+                           completionBlock:(void(^)(void))block;
 
 @end
 
@@ -130,7 +131,7 @@
     //TODO: use NSDecimalNumber here
     _currentProgress = 1.00 - CGRectGetHeight(newFoldingViewRect)/(FOLD_VIEW_HEIGHT);
     _currentProgress = ((int)(_currentProgress * 100))/100.0;
-    [self updateLayersTransformsWithProgress:_currentProgress animated:NO time:0];
+    [self updateLayersTransformsWithProgress:_currentProgress animated:NO time:0 completionBlock:nil];
   }else if([recognizer state] == UIGestureRecognizerStateEnded){
     CGPoint a = [recognizer velocityInView:[self view]];
     CGFloat pointsToGo = FOLD_VIEW_HEIGHT - CGRectGetHeight([_foldingView frame]);
@@ -142,19 +143,24 @@
     if(_currentProgress == progress)
       return;
     
-    [self updateLayersTransformsWithProgress:progress animated:YES time:time];
-    _currentProgress = progress;
-    CGRect newFoldingViewRect = [_foldingView frame];
-    newFoldingViewRect.size.height = (a.y > 0) ? FOLD_VIEW_HEIGHT : 0.0;
-    [_foldingView setFrame:newFoldingViewRect];
+    [self updateLayersTransformsWithProgress:progress animated:YES time:time completionBlock:^{
+      _currentProgress = progress;
+      CGRect newFoldingViewRect = [_foldingView frame];
+      newFoldingViewRect.size.height = (a.y > 0) ? FOLD_VIEW_HEIGHT : 0.0;
+      [_foldingView setFrame:newFoldingViewRect];
+    }];
+
   }
 }
 
-- (void)updateLayersTransformsWithProgress:(CGFloat)progress animated:(BOOL)animated time:(CFTimeInterval)time{
+- (void)updateLayersTransformsWithProgress:(CGFloat)progress animated:(BOOL)animated time:(CFTimeInterval)time
+                           completionBlock:(void(^)(void))block{
   if (progress < 0.0 || progress > 1.0)
     return;
   [CATransaction setDisableActions:!animated];
   [CATransaction begin];
+  if(block)
+    [CATransaction setCompletionBlock:block];
   
   [_foldsArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
     CATransformLayer *layer = (CATransformLayer*)obj;
